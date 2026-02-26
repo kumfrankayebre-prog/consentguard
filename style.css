@@ -35,4 +35,17 @@ button {
 
 button:hover {
   background: #005bbb;
+}#uploadInstructions {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 16px;
+}#logoContainer {
+  text-align: center; /* Center the logo */
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 120px;       /* Adjust width */
+  height: auto;       /* Maintain aspect ratio */
 }
