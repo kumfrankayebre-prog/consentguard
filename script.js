@@ -1,5 +1,7 @@
 console.log("ConsentGuard script running");
-
+const watermarkTextInput = document.getElementById('watermarkText');
+const watermarkColorInput = document.getElementById('watermarkColor');
+const watermarkSizeInput = document.getElementById('watermarkSize');
 // Get HTML elements
 const fileInput = document.getElementById('fileInput');
 const uploadBtn = document.getElementById('uploadBtn');
@@ -74,4 +76,10 @@ function shareFacebook() {
 // Share to TikTok (manual for now)
 function shareTikTok() {
   alert("TikTok sharing requires manual upload for now.");
+}function downloadImage() {
+  const canvas = document.getElementById('canvas'); // make sure this matches your canvas ID
+  const link = document.createElement('a');
+  link.download = "watermarked-image.png"; // default filename
+  link.href = canvas.toDataURL("image/png"); // convert canvas to image
+  link.click();
 }
